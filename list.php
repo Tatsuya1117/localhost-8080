@@ -22,7 +22,7 @@ try {
 	echo "</table>\n";
 	$dbh = null;
 } catch (Exception $e) {
-	echo "エラー発生: " . htmlspecialchars($e->getMessage(),
+	echo "エラーが発生しました: " . htmlspecialchars($e->getMessage(),
 ENT_QUOTES, 'UTF-8') . "<br>";
 	die();
 }
