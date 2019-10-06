@@ -27,7 +27,7 @@ try {
 
 <body>
 	レシピの投稿<br>
-	<form method="post" action="update.php">
+<form method="post" action="update.php">
 	料理名：<input type="text" name="recipe_name" value="<?php echo htmlspecialchars($result['recipe_name'], ENT_QUOTES, 'UTF-8'); ?>"<br>
 	カテゴリ：
 	<select name="category">
@@ -48,7 +48,7 @@ try {
 	<textarea name="howto" cols="40" maxlength="150"><?php echo htmlspecialchars($result['howto'], ENT_QUOTES, 'UTF-8'); ?></textarea>
 	<br>
 	<input type="hidden" name="id" value="<?php echo htmlspecialchars($result['id'], ENT_QUOTES, 'UTF-8'); ?>">
-	<imput type="submit" value="送信">
-	</form>
+	<input type="submit" value="送信">
+</form>
 </body>
 </html>
