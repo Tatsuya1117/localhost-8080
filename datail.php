@@ -1,12 +1,10 @@
-<!-- 2019.09.16 恐らくデータベースと上手く紐づいていない為、エラーが出てしまう。
- -->
 <?php
 $user = "tatsuya";
 $pass = "tatsuya0312";
 try {
 	if(empty($_GET['id'])) throw new Exception('ID不正');
 	$id = (int) $_GET['id'];
-	$dbh = new PDO('mysql:host=localhost;dbname=db1;charset=utf8',$user, $pass);
+	$dbh = new PDO('mysql:host=localhost;dbname=db8080;charset=utf8',$user, $pass);
 	$dbh->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 	$dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	$sql = "SELECT * FROM recipes WHERE id = ?";
