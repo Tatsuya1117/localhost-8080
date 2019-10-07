@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>レシピの一覧</title>
+</head>
+<body>
+	<h1>レシピの一覧</h1>
+	<a href="form.html">レシピの新規登録</a>
 <?php
 $user = "tatsuya";
 $pass = "tatsuya0312";

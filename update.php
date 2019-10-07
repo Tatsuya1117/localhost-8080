@@ -22,7 +22,7 @@ try {
 	$stmt->bindValue(6, $id, PDO::PARAM_INT);
 	$stmt->execute();
 	$dbh = null;
-	echo "ID: " . htmlspecialchars($id, ENT_QUOTES, 'UTF-8') . "レシピの更新が完了しました。";
+	echo "ID: ". "【" . htmlspecialchars($id, ENT_QUOTES, 'UTF-8') . "】"."レシピの更新が完了しました。";
 } catch (Exception $e) {
 	echo "エラーが発生しました。：" .htmlspecialchars($e->getMessage(), ENT_QUOTES, 'UTF-8') . "<br>";
 	die();
