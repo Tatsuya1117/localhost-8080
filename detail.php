@@ -17,7 +17,7 @@ try {
 	echo "難易度：" . htmlspecialchars($result['difficulty'],ENT_QUOTES,'UTF-8') . "<br>\n";
 	echo "作り方：<br>" . nl2br(htmlspecialchars($result['howto'],ENT_QUOTES,'UTF-8')) . "<br>\n";
 	$dbh = null;
-	echo "レシピの登録が完了しました！<br>";
+	echo "レシピの内容は確認できましたか？<br>";
 	echo "<a href='index.php'>TOP pageに戻る</a>";
 } catch (Exception $e) {
 	echo "エラーが発生しました: " . htmlspecialchars($e->getMessage(),ENT_QUOTES, 'UTF-8') . "<br>";
