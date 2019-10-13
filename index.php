@@ -5,7 +5,7 @@
 	<title>レシピ一覧</title>
 </head>
 <body>
-	<h1>レシピの一覧</h1>
+	<h1>レシピ一覧</h1>
 	<a href="form.html">レシピの新規登録</a>
 <?php
 require_once '/Applications/MAMP/htdocs/db_config.php';
