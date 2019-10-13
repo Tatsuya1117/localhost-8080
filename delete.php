@@ -1,6 +1,5 @@
 <?php
-$user = "tatsuya";
-$pass = "tatsuya0312";
+require_once '/Applications/MAMP/htdocs/db_config.php';
 try {
 	if (empty($_GET['id'])) throw new Exception('IDが間違っています。');
 	$id = (int) $_GET['id'];

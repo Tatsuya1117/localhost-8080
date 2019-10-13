@@ -1,6 +1,5 @@
 <?php
-$user = "tatsuya";
-$pass = "tatsuya0312";
+require_once '/Applications/MAMP/htdocs/db_config.php';
 $recipe_name = $_POST['recipe_name'];
 $howto = $_POST['howto'];
 $category = (int) $_POST['category'];
