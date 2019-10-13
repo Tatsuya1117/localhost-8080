@@ -19,7 +19,8 @@ try {
 	$stmt->bindValue(5, $howto, PDO::PARAM_STR);
 	$stmt->execute();
 	$dbh = null;
-	echo "レシピの登録が完了しました！";
+	echo "レシピの登録が完了しました！<br>";
+	echo "<a href='index.php'>TOP pageに戻る</a>";
 } catch (Exception $e) {
 	echo "エラーが発生しました。:" . htmlspecialchars($e->getMessage(), ENT_QUOTES, 'UTF-8') . "<br>";
 	die();

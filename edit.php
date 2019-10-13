@@ -49,6 +49,10 @@ try {
 	<br>
 	<input type="hidden" name="id" value="<?php echo htmlspecialchars($result['id'], ENT_QUOTES, 'UTF-8'); ?>">
 	<input type="submit" value="送信">
+	<?php
+	echo "レシピの登録が完了しました！<br>";
+	echo "<a href='index.php'>TOP pageに戻る</a>";
+	?>
 </form>
 </body>
 </html>
